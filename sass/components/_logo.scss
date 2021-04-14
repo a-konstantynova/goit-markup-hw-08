@@ -5,12 +5,7 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-  }
-
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -19,6 +14,14 @@
 
 .logo_light_theme {
   color: var(--black-color);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__accent-text {
