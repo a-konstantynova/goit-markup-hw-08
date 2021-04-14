@@ -1066,8 +1066,34 @@ img {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-button {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-button {
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio-button__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-button__item {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 }
 
 .portfolio-button__btn {
@@ -1090,32 +1116,6 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: 1px solid transparent;
-}
-
-@media screen and (max-width: 767px) {
-  .portfolio-button {
-    flex-wrap: wrap;
-  }
-  .portfolio-button__item {
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio-button {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  .portfolio-button__item:not(:last-child) {
-    margin-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio-button {
-    margin-bottom: 50px;
-  }
 }
 
 .portfolio-list {
@@ -1146,12 +1146,14 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-list__item {
     flex-basis: calc(100% / 3 - 30px);
+    width: 370px;
   }
 }
 
@@ -1198,6 +1200,10 @@ img {
   color: var(--light-grey-color);
 }
 
+.extra-pad {
+  padding-bottom: 34px;
+}
+
 .portfolio-list__wrapper {
   border: 1px solid var(--border-portfolio);
   border-top: none;
@@ -1221,7 +1227,6 @@ img {
   color: var(--white-color);
   padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
