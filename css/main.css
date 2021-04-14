@@ -389,12 +389,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .logo_light_theme {
-    margin-right: 93px;
-  }
-}
-
 .logo__accent-text {
   color: var(--secondary-color);
 }
@@ -855,8 +849,12 @@ img {
 
 .footer {
   background: var(--dark-grey-color);
-  text-align: center;
-  padding: 60px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .address {
@@ -923,7 +921,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);

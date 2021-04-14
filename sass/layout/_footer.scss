@@ -1,7 +1,9 @@
 .footer {
   background: var(--dark-grey-color);
-  text-align: center;
-  padding: 60px 0;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .address {
@@ -62,7 +64,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
