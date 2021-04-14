@@ -5,7 +5,7 @@
 
 .modal-form__field {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--light-grey-color);
@@ -57,6 +57,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::placeholder {
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
     letter-spacing: 0.01em;
@@ -67,15 +68,20 @@
     border-color: var(--secondary-color);
     outline: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal-form__check-desc {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  margin-left: 12px;
+  margin: 0 auto;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--light-grey-color);
   margin-top: 20px;
@@ -84,7 +90,7 @@
     display: block;
     content: "";
     width: 16px;
-    height: 16px;
+    height: 15px;
     border: 1px solid var(--accent-color);
     border-radius: 2px;
     cursor: pointer;
@@ -103,6 +109,20 @@
       border: 2px solid var(--secondary-color);
     }
   }
+  @media screen and (max-width: 768px) {
+    font-size: 9px;
+    letter-spacing: 0.01em;
+
+    &::before {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.7;
+  }
 }
 
 .modal-form__link {
@@ -110,9 +130,8 @@
 }
 
 .modal-form__btn {
-  height: 50px;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px 55px;
   min-width: 200px;
   align-self: center;
